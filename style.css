@@ -1,0 +1,83 @@
+/* Type your code here */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    font-family: Nunito Sans;
+    font-weight: bold;
+}
+
+body{
+    background-color: white;
+}
+
+#background{
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    right: 0px;
+}
+#background img{
+    height: 700px;
+}
+
+#logo{
+    display: flex;
+    justify-content: flex-end;
+}
+#logo img{
+    padding:20px;
+    margin-right: 100px;
+}
+#container{
+    margin-left: 4%;
+}
+table,th,td{
+    border-collapse: collapse;
+    padding: 10px;
+}
+table{
+    width: 60vw;
+}
+thead{
+    color: white;
+    background-color: #F05033;
+}
+td{
+    border-bottom: 1px solid #BEBEBE;
+}
+tbody{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}   
+a{
+    color: #2B81EE;
+}
+.link{
+    color: #2B81EE;
+}
+#lnk{
+    color: #2B81EE;
+}
+.intext{
+    color: #848484;
+}
+
+h1{
+    font-size: 40px;
+    text-shadow: 3px 3px 4px grey;
+}
+h3{
+    color: #696969;
+}
+#info{
+    height: 385px;
+    width: 723px;
+    top: 236px;
+    left: 260px;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
