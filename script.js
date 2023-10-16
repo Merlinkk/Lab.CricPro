@@ -12,6 +12,8 @@ const sreesanth = document.getElementById('SSR')
 
 const infoDiv = document.getElementById('info')
 
+const table = document.getElementById('tableon')
+
 const players = ['https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-sehwag.png',
                 'https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-sachin.png',
                 'https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-gambhir.png',
@@ -32,20 +34,24 @@ document.addEventListener('keydown', function (event) {
 
 infoDiv.style.display = 'none'
 
+
 function pointMe(index){
     console.log(index)
     infoDiv.style.display = ''
     infoDiv.style.backgroundImage = `url('${players[index]}')`;
+    table.style.filter = "blur(1px)"
 }
 
 function onEscapeKeyPressed(){
     infoDiv.style.display = 'none'
+    table.style.filter = ""
 }
 
 const cover = document.getElementById('cover')
 
 cover.onclick = () =>{
     infoDiv.style.display = 'none'
+    table.style.filter = ""
 }
 
 
