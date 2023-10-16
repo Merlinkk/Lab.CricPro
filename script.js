@@ -30,7 +30,7 @@ document.addEventListener('keydown', function (event) {
     }
   });
 
-
+infoDiv.style.display = 'none'
 
 function pointMe(index){
     console.log(index)
@@ -42,5 +42,10 @@ function onEscapeKeyPressed(){
     infoDiv.style.display = 'none'
 }
 
+const cover = document.getElementById('cover')
+
+cover.onclick = () =>{
+    infoDiv.style.display = 'none'
+}
 
 
